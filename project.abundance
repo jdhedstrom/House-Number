@@ -44,14 +44,34 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 10
+                    "ioValue": 16
                 },
                 {
                     "name": "y length",
-                    "ioValue": 10
+                    "ioValue": 24
                 }
             ],
             "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Text",
+            "name": "Text",
+            "x": 0.6286031042128603,
+            "y": 0.44822485207100593,
+            "uniqueID": "c2105e64-2919-4d9f-a146-fa8841d1ec86",
+            "ioValues": [
+                {
+                    "name": "Font Size",
+                    "ioValue": 10
+                },
+                {
+                    "name": "Text",
+                    "ioValue": "Lorem Ipsum"
+                }
+            ],
+            "description": "Creates a new text sketch.",
+            "fontFamily": "ANTON",
+            "selectedFontIndex": 0
         }
     ],
     "allConnectors": [],
