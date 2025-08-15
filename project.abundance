@@ -30,7 +30,7 @@
                 },
                 {
                     "name": "height",
-                    "ioValue": 10
+                    "ioValue": "d71d347c-fb2b-4999-ac9c-e6c25d2bf891"
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negitive. "
@@ -38,8 +38,8 @@
         {
             "atomType": "Rectangle",
             "name": "Rectangle",
-            "x": 0.4493304673425374,
-            "y": 0.7340364174024593,
+            "x": 0.147450110864745,
+            "y": 0.8402366863905326,
             "uniqueID": "d71d347c-fb2b-4999-ac9c-e6c25d2bf891",
             "ioValues": [
                 {
@@ -72,9 +72,53 @@
             "description": "Creates a new text sketch.",
             "fontFamily": "ANTON",
             "selectedFontIndex": 0
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.19068736141906872,
+            "y": 0.507396449704142,
+            "uniqueID": "d28e4d00-6b21-45fe-98f0-94afb03a8dc1",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 16
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 24
+                }
+            ],
+            "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "ShrinkWrap",
+            "name": "Shrink Wrap",
+            "x": 0.27827050997782704,
+            "y": 0.30029585798816566,
+            "uniqueID": "de850047-7d9f-48f8-b9f2-dae531ac805a",
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": ""
+                },
+                {
+                    "name": "Shape 1",
+                    "ioValue": ""
+                }
+            ],
+            "description": "Joins two or more drawings into a single sketch by filling in the space between them. Also called 'hull'"
         }
     ],
-    "allConnectors": [],
+    "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "height",
+            "ap2Primary": false,
+            "ap1ID": "d71d347c-fb2b-4999-ac9c-e6c25d2bf891",
+            "ap2ID": "6a7a9868-b0d4-44df-9e4d-786b734568a4"
+        }
+    ],
     "unitsKey": "Inches",
     "fileTypeVersion": 1,
     "compiledBom": {},
