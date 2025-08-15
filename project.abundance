@@ -16,6 +16,42 @@
             "uniqueID": 1744381167556,
             "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.7494456762749445,
+            "y": 0.7159763313609467,
+            "uniqueID": "6a7a9868-b0d4-44df-9e4d-786b734568a4",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": ""
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.4493304673425374,
+            "y": 0.7340364174024593,
+            "uniqueID": "d71d347c-fb2b-4999-ac9c-e6c25d2bf891",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 10
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new rectangle."
         }
     ],
     "allConnectors": [],
