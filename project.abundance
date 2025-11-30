@@ -1,126 +1,112 @@
 {
-    "atomType": "Molecule",
-    "name": "House-Number",
-    "x": 0,
-    "y": 0,
-    "uniqueID": 1744381157998,
-    "ioValues": [],
-    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
-    "topLevel": true,
-    "allAtoms": [
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": 1744381157998,
+  "name": "House-Number",
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": 1744381167556
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.16607015032211883,
+      "y": 0.3598726114649682,
+      "uniqueID": "id-18",
+      "name": "Top Plate",
+      "ioValues": [
         {
-            "atomType": "Output",
-            "name": "Output",
-            "x": 0.98,
-            "y": 0.5,
-            "uniqueID": 1744381167556,
-            "ioValues": [],
-            "description": "Connect geometry here to make it available in the next level up. "
+          "name": "Width",
+          "ioValue": 18,
+          "currentEquation": "18"
         },
         {
-            "atomType": "Extrude",
-            "name": "Extrude",
-            "x": 0.7494456762749445,
-            "y": 0.7159763313609467,
-            "uniqueID": "6a7a9868-b0d4-44df-9e4d-786b734568a4",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": ""
-                },
-                {
-                    "name": "height",
-                    "ioValue": "d71d347c-fb2b-4999-ac9c-e6c25d2bf891"
-                }
-            ],
-            "description": "Extrudes a 2D shape. Input can be negitive. "
-        },
-        {
-            "atomType": "Rectangle",
-            "name": "Rectangle",
-            "x": 0.147450110864745,
-            "y": 0.8402366863905326,
-            "uniqueID": "d71d347c-fb2b-4999-ac9c-e6c25d2bf891",
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 16
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 24
-                }
-            ],
-            "description": "Creates a new rectangle."
-        },
-        {
-            "atomType": "Text",
-            "name": "Text",
-            "x": 0.6286031042128603,
-            "y": 0.44822485207100593,
-            "uniqueID": "c2105e64-2919-4d9f-a146-fa8841d1ec86",
-            "ioValues": [
-                {
-                    "name": "Font Size",
-                    "ioValue": 10
-                },
-                {
-                    "name": "Text",
-                    "ioValue": "Lorem Ipsum"
-                }
-            ],
-            "description": "Creates a new text sketch.",
-            "fontFamily": "ANTON",
-            "selectedFontIndex": 0
-        },
-        {
-            "atomType": "Rectangle",
-            "name": "Rectangle",
-            "x": 0.19068736141906872,
-            "y": 0.507396449704142,
-            "uniqueID": "d28e4d00-6b21-45fe-98f0-94afb03a8dc1",
-            "ioValues": [
-                {
-                    "name": "x length",
-                    "ioValue": 16
-                },
-                {
-                    "name": "y length",
-                    "ioValue": 24
-                }
-            ],
-            "description": "Creates a new rectangle."
-        },
-        {
-            "atomType": "ShrinkWrap",
-            "name": "Shrink Wrap",
-            "x": 0.29046563192904656,
-            "y": 0.3121301775147929,
-            "uniqueID": "de850047-7d9f-48f8-b9f2-dae531ac805a",
-            "ioValues": [
-                {
-                    "name": "Shape 1",
-                    "ioValue": ""
-                },
-                {
-                    "name": "Shape 1",
-                    "ioValue": ""
-                }
-            ],
-            "description": "Joins two or more drawings into a single sketch by filling in the space between them. Also called 'hull'"
+          "name": "Height",
+          "ioValue": 12,
+          "currentEquation": "12"
         }
-    ],
-    "allConnectors": [
+      ],
+      "topLevel": false,
+      "allAtoms": [
         {
-            "ap1Name": "geometry",
-            "ap2Name": "height",
-            "ap2Primary": false,
-            "ap1ID": "d71d347c-fb2b-4999-ac9c-e6c25d2bf891",
-            "ap2ID": "6a7a9868-b0d4-44df-9e4d-786b734568a4"
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-20"
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.1467430207587688,
+          "y": 0.5191082802547771,
+          "uniqueID": "id-22",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 10,
+              "currentEquation": "Width"
+            },
+            {
+              "name": "y length",
+              "ioValue": 10,
+              "currentEquation": "Height"
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.2467430207587688,
+          "y": 0.5191082802547771,
+          "uniqueID": "id-26",
+          "ioValues": [
+            {
+              "name": "xDist",
+              "ioValue": 5,
+              "currentEquation": "Width/2"
+            },
+            {
+              "name": "yDist",
+              "ioValue": 5,
+              "currentEquation": "Height/2"
+            },
+            {
+              "name": "zDist",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.15384615384615385,
+          "uniqueID": "id-32",
+          "name": "Width",
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.025384615384615384,
+          "y": 0.23076923076923078,
+          "uniqueID": "id-35",
+          "name": "Height",
+          "type": "number"
         }
-    ],
-    "unitsKey": "Inches",
-    "fileTypeVersion": 1,
-    "compiledBom": {},
-    "filetypeVersion": 1
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-22",
+          "ap2ID": "id-26"
+        }
+      ],
+      "fileTypeVersion": 1
+    }
+  ],
+  "allConnectors": [],
+  "unitsKey": "Inches",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
