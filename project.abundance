@@ -18,18 +18,6 @@
       "y": 0.3598726114649682,
       "uniqueID": "id-18",
       "name": "Top Plate",
-      "ioValues": [
-        {
-          "name": "Width",
-          "ioValue": 18,
-          "currentEquation": "18"
-        },
-        {
-          "name": "Height",
-          "ioValue": 12,
-          "currentEquation": "12"
-        }
-      ],
       "topLevel": false,
       "allAtoms": [
         {
@@ -46,13 +34,18 @@
           "ioValues": [
             {
               "name": "x length",
-              "ioValue": 10,
-              "currentEquation": "Width"
+              "ioValue": 20,
+              "currentEquation": "20"
             },
             {
               "name": "y length",
-              "ioValue": 10,
-              "currentEquation": "Height"
+              "ioValue": 12,
+              "currentEquation": "12"
+            },
+            {
+              "name": "Height",
+              "ioValue": 1,
+              "currentEquation": "1"
             }
           ]
         },
@@ -64,35 +57,36 @@
           "ioValues": [
             {
               "name": "xDist",
-              "ioValue": 5,
-              "currentEquation": "Width/2"
+              "ioValue": 10,
+              "currentEquation": "10"
             },
             {
               "name": "yDist",
-              "ioValue": 5,
-              "currentEquation": "Height/2"
+              "ioValue": 6,
+              "currentEquation": "6"
             },
             {
               "name": "zDist",
               "ioValue": 0
+            },
+            {
+              "name": "Height",
+              "ioValue": 1
             }
           ]
         },
         {
-          "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.15384615384615385,
-          "uniqueID": "id-32",
-          "name": "Width",
-          "type": "number"
-        },
-        {
-          "atomType": "Input",
-          "x": 0.025384615384615384,
-          "y": 0.23076923076923078,
-          "uniqueID": "id-35",
-          "name": "Height",
-          "type": "number"
+          "atomType": "Extrude",
+          "x": 0.3264137437365784,
+          "y": 0.5636942675159236,
+          "uniqueID": "id-38",
+          "ioValues": [
+            {
+              "name": "height",
+              "ioValue": 0.5,
+              "currentEquation": ".5"
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -100,6 +94,16 @@
           "ap2Name": "geometry",
           "ap1ID": "id-22",
           "ap2ID": "id-26"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-26",
+          "ap2ID": "id-38"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-38",
+          "ap2ID": "id-20"
         }
       ],
       "fileTypeVersion": 1
